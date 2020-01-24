@@ -25,9 +25,9 @@
             android:paddingLeft="@dimen/dimension20dp"
             android:paddingTop="@dimen/dimension20dp"
             android:paddingRight="@dimen/dimension20dp"
-            android:text="M/s Madanlal Sitaram Baheti"
+            android:text="M/s Madanlal Sitaram Baheti &amp; Company"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="@dimen/dimension18dp"
+            android:textSize="@dimen/dimension16dp"
             android:textStyle="bold" />
 
         <TextView
@@ -428,7 +428,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/open_sans_regular"
                         android:paddingLeft="@dimen/dimension2dp"
-                        android:text="Payable Amount in Figure :"
+                        android:text="Payable Amount in Words :"
                         android:textColor="@color/colorBlack"
                         android:textSize="@dimen/dimension10dp"
                         android:textStyle="bold" />

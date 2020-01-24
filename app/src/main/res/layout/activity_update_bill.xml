@@ -94,7 +94,7 @@
                     android:hint="Customer Name"
                     android:maxLines="1"
                     android:imeOptions="actionNext"
-                    android:inputType="text"
+                    android:inputType="textCapSentences"
                     android:maxLength="30"
                     android:padding="@dimen/dimension10dp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -110,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/dimension5dp"
                     android:hint="Address"
-                    android:inputType="text"
+                    android:inputType="textCapSentences"
                     android:imeOptions="actionNext"
                     android:maxLength="50"
                     android:maxLines="1"

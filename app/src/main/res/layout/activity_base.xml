@@ -22,14 +22,15 @@
             android:id="@+id/txtLogo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimension40dp"
+            android:layout_marginLeft="@dimen/dimension10dp"
             android:layout_marginTop="@dimen/dimension100dp"
-            android:layout_marginRight="@dimen/dimension40dp"
+            android:layout_marginRight="@dimen/dimension10dp"
             android:fontFamily="@font/bookos_bold"
             android:gravity="center"
-            android:text="M/s Madanlal Sitaram Baheti"
+            android:textStyle="bold"
+            android:text="M/s Madanlal Sitaram Baheti &amp; Company"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/dimension20dp" />
+            android:textSize="@dimen/dimension16dp" />
 
         <TextView
             android:id="@+id/txtName"

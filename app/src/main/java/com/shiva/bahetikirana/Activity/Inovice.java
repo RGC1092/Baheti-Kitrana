@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.telephony.PhoneNumberUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -95,7 +97,7 @@ public class Inovice extends AppCompatActivity {
 
     private String ConvertIntoWords() {
         String inWords = EnglishNumberToWords.convert(Math.round(totalPay()));
-        return inWords;
+        return inWords+" Only";
     }
 
     private float totalPay() {
@@ -216,17 +218,24 @@ public class Inovice extends AppCompatActivity {
                 Inovice.this,
                 "com.shiva.bahetikirana.fileprovider", //(use your app signature + ".provider" )
                 file);
-
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_SEND);
-        intent.setType("image/*");
-        intent.setPackage("com.whatsapp");
-        /*String url = "https://wa.me/91" + Mobile+"?image="+uri;
-        intent.setData(Uri.parse(url));*/
-        //intent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.sharing_text));
-        intent.putExtra(Intent.EXTRA_STREAM, uri);//pass uri here
-        startActivity(Intent.createChooser(intent, "Share Via"));
+        Intent sendIntent = new Intent("android.intent.action.SEND");
+        sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.ContactPicker"));
+        sendIntent.setType("image");
+        sendIntent.putExtra(Intent.EXTRA_STREAM,uri);
+        sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators("91"+Mobile)+"@s.whatsapp.net");
+        sendIntent.putExtra(Intent.EXTRA_TEXT,"");
+        startActivity(sendIntent);
         finish();
     }
 }
 
+/*Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("image/*");
+        intent.setPackage("com.whatsapp");
+        *//*String url = "https://wa.me/91" + Mobile+"?image="+uri;
+        intent.setData(Uri.parse(url));*//*
+        //intent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.sharing_text));
+        intent.putExtra(Intent.EXTRA_STREAM, uri);//pass uri here
+        startActivity(Intent.createChooser(intent, "Share Via"));
+        */

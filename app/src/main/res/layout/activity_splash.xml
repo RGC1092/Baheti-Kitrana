@@ -16,9 +16,9 @@
         android:gravity="center"
         android:paddingLeft="@dimen/dimension20dp"
         android:paddingRight="@dimen/dimension20dp"
-        android:text="M/s Madanlal Sitaram Baheti"
+        android:text="M/s Madanlal Sitaram Baheti &amp; Company"
         android:textColor="@color/colorWhite"
-        android:textSize="@dimen/dimension20dp"
+        android:textSize="@dimen/dimension18dp"
         android:textStyle="bold" />
 
     <TextView
