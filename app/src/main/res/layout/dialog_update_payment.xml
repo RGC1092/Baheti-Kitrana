@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bill">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimension20dp"
+                android:layout_marginTop="@dimen/dimension30dp"
+                android:layout_marginRight="@dimen/dimension20dp"
+                android:layout_marginBottom="@dimen/dimension10dp"
+                android:gravity="center"
+                android:text="Bill Details"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/dimension18dp"
+                android:textStyle="bold|italic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension1dp"
+                android:background="@color/colorBlack"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimension10dp">
+
+                <TextView
+                    android:id="@+id/txtSubTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="Gross Total Amount : "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtGrossTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtSubTotal"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="202000"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimension10dp">
+
+                <TextView
+                    android:id="@+id/txtCuttingTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="Cutting Total: "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCutting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtCuttingTotal"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="202"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimension10dp">
+
+                <TextView
+                    android:id="@+id/txtWagesTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="Wages Total: "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtWages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtWagesTotal"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="202"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimension10dp">
+
+                <TextView
+                    android:id="@+id/txtTransportTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="Transport Total: "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTransport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtTransportTotal"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="202"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dimension10dp">
+
+                <TextView
+                    android:id="@+id/txtTotalPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="Payable Amount: "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimension14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTotalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtTotalPay"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="2022111"
+                    android:gravity="right"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimension14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dimension10dp">
+
+                <TextView
+                    android:id="@+id/textPaidAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="Paid Amount: "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimension14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPaidAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textPaidAmount"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="2022111"
+                    android:gravity="right"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimension14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dimension10dp">
+
+                <TextView
+                    android:id="@+id/textBalanceAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="Balance Amount: "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimension14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtBalanceAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textBalanceAmount"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:paddingLeft="@dimen/dimension10dp"
+                    android:text="2022111"
+                    android:gravity="right"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimension14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimension10dp"
+                android:layout_marginRight="@dimen/dimension10dp"
+                android:layout_marginTop="@dimen/dimension10dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etPaymentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension5dp"
+                    android:drawableRight="@drawable/ic_drop_down"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:cursorVisible="false"
+                    android:hint="Payment Type"
+                    android:padding="@dimen/dimension10dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimension10dp"
+                    android:layout_marginRight="@dimen/dimension10dp"
+                    android:layout_marginTop="@dimen/dimension10dp"
+                    android:layout_weight="5">
+
+                    <EditText
+                        android:id="@+id/etAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:digits="0123456789"
+                        android:layout_margin="@dimen/dimension5dp"
+                        android:hint="Balance Amount"
+                        android:padding="@dimen/dimension10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension1dp"
+                android:layout_marginTop="@dimen/dimension5dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/txtInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimension10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:background="@drawable/button_bk"
+                android:gravity="center"
+                android:padding="@dimen/dimension10dp"
+                android:textAllCaps="true"
+                android:onClick="onClickGenerateBill"
+                android:text="GENERATE Updated INVOICE"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimension16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activity.SplashActivity">
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimension20dp"
+        android:paddingRight="@dimen/dimension20dp"
+        android:text="M/s Madanlal Sitaram Baheti"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimension20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/txtLogo"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:text="(धान्य आणि भुसार मालाचे व्यापारी)"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimension16dp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

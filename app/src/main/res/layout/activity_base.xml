@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context=".Activity.BaseActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension500dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/card" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimension40dp"
+            android:layout_marginTop="@dimen/dimension100dp"
+            android:layout_marginRight="@dimen/dimension40dp"
+            android:fontFamily="@font/bookos_bold"
+            android:gravity="center"
+            android:text="M/s Madanlal Sitaram Baheti"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dimension20dp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLogo"
+            android:layout_marginLeft="@dimen/dimension40dp"
+            android:layout_marginRight="@dimen/dimension40dp"
+            android:fontFamily="@font/bookos_bold"
+            android:gravity="center"
+            android:text="(धान्य आणि भुसार मालाचे व्यापारी)"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dimension16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_marginTop="@dimen/dimension30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension10dp"
+                android:elevation="@dimen/dimension10dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/dimension10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimension60dp"
+                    android:layout_height="@dimen/dimension60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimension40dp"
+                    android:src="@drawable/new_bill" />
+
+                <TextView
+                    android:id="@+id/txtCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimension10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dimension15dp"
+                    android:text="Generate New"
+                    android:textSize="@dimen/dimension20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension10dp"
+                android:elevation="@dimen/dimension10dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/dimension10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimension60dp"
+                    android:layout_height="@dimen/dimension60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimension40dp"
+                    android:src="@drawable/my_bill" />
+
+                <TextView
+                    android:id="@+id/txtMyBills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimension10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dimension15dp"
+                    android:text="Pending Bills"
+                    android:textSize="@dimen/dimension20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension10dp"
+                android:elevation="@dimen/dimension10dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/dimension10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimension60dp"
+                    android:layout_height="@dimen/dimension60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimension40dp"
+                    android:src="@drawable/download_db" />
+
+                <TextView
+                    android:id="@+id/txtExportBills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimension10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dimension15dp"
+                    android:text="Export Bills"
+                    android:textSize="@dimen/dimension20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

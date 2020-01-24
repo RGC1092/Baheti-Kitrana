@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimension2dp"
+        app:contentPadding="@dimen/dimension5dp"
+        app:cardCornerRadius="@dimen/dimension10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/txtBillNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="sNo"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtBillDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="left"
+                    android:padding="@dimen/dimension5dp"
+                    android:text="Bill Date"
+                    android:textColor="@color/color_NavyBlue"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension1dp"
+                android:textStyle="bold"
+                android:weightSum="4">
+
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="sNo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension1dp"
+                android:textStyle="bold"
+                android:weightSum="4">
+
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="sNo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtMobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="sNo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension1dp"
+                android:weightSum="4">
+
+
+
+                <TextView
+                    android:id="@+id/txtPaidAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Paid"
+                    android:textColor="@color/color_green"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtBalanceAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Balance"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/dimension12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
